@@ -5,7 +5,7 @@
   <span class="with-love">
     <i class="fa fa-{{ theme.authoricon }}"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">{{ config.author }}</span>
+  <a href="mailto:blog@rxjiang.com" class="author" itemprop="copyrightHolder">@{{ config.author }}</a>
 </div>
 
 {% if theme.copyright %}

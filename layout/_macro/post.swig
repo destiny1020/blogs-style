@@ -305,11 +305,13 @@
       {% endif %}
     </div>
 
-    <div>
-      {% if not is_index %}
-        {% include 'reward.swig' %}
-      {% endif %}
-    </div>
+    {% if post.reward %}
+      <div>
+        {% if not is_index %}
+          {% include 'reward.swig' %}
+        {% endif %}
+      </div>
+    {% endif %}
 
 
     <footer class="post-footer">
